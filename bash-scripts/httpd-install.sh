@@ -17,7 +17,7 @@ if [ "$major_version" -eq 6 ];
 then
 	wget -P /etc/httpd/conf/ https://raw.githubusercontent.com/Pratik-Patil/Scripts-Configurations/master/configuration-files/RHEL_6.x/httpd.conf;
 	
-elif[ "$major_version" -eq 7 ]
+elif [ "$major_version" -eq 7 ]
 then
 	wget -P /etc/httpd/conf/ https://raw.githubusercontent.com/Pratik-Patil/Scripts-Configurations/master/configuration-files/RHEL_7.x/httpd.conf;
 	firewall-cmd --zone=public --add-port=8888/tcp --permanent && firewall-cmd --reload;
